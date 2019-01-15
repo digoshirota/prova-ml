@@ -1,0 +1,204 @@
+header
+	background-color:#FFE600
+
+.wrapper
+	max-width: 980px
+	margin: 0 auto
+	display: flex
+	height: 55px
+	justify-content: center
+
+.logo
+	margin: 0 25px 0 0
+	img
+		position: relative
+		top: 50%
+		transform: translateY(-50%)
+
+.busca
+	width: 88%
+	.form
+		display: flex
+		position: relative
+		top: 50%
+		transform: translateY(-50%)
+	input
+		border: none
+		height: 40px
+		width: 95%
+		padding: 0
+		border-top-left-radius: 5px
+		border-bottom-left-radius: 5px
+		text-indent: 15px
+		font-size: 18px
+		color: #999999
+	button
+		background: #eeeeee
+		border: none
+		height: 40px
+		width: 40px
+		border-top-right-radius: 5px
+		border-bottom-right-radius: 5px
+		img
+			margin: 6px 0px 0 1px;
+
+.breadcumb
+	display:flex
+	max-width: 935px
+	margin: 0 auto
+	background-color: #eee
+	padding: 16px 0
+	font-size: 14px
+
+	a
+		color:#999
+		text-decoration: none
+	span
+		coloR:#666
+
+
+.list
+	max-width: 905px
+	margin: 0 auto
+	background-color: #fff
+	padding: 16px 
+	display: flex
+	position: relative
+
+	.img-product
+		max-width: 180px
+		min-height: 184px
+		img
+			width: 100%
+			border-radius: 4px
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+
+
+	.price
+		max-width: 533px
+
+		h3
+			padding: 16px
+			color:#333
+			font-size: 24px
+			margin: 0
+		h2
+			padding: 16px
+			color:#666
+			font-size: 18px
+			margin: 0
+	.location
+		position: absolute
+		right: 83px
+		top: 48px
+		h3
+			padding: 16px
+			color:#999
+			font-size: 12px
+			margin: 0
+	hr
+		position: absolute
+		width: 96%
+		bottom: -4px
+		opacity: 0.2
+
+
+
+.wrapper-list
+	background-color: #eeeeee
+	> a
+		text-decoration: none
+
+.detail
+	max-width: 905px
+	margin: 0 auto
+	background-color: #fff
+	padding: 16px 
+	display: flex
+	position: relative
+	.price
+		max-width: 280px
+		position: absolute
+		right: 20px
+		h2
+			margin: 0
+			padding: 0 0 16px 0
+			font-size: 24px
+		h3
+			margin: 0
+			padding: 16px 0
+			font-size: 46px
+		.cta
+			padding: 16px 0
+
+			button
+				background-color: #3483FA
+				border: none
+				color: #fff
+				width: 96%
+				padding: 16px 0
+				margin: 0 32px 0 0
+				border-radius: 8px
+	.qtde
+		p
+			font-size: 14px
+			padding: 16px 0
+			margin: 0
+
+.description
+	max-width: 905px
+	margin: 0 auto
+	background-color: #fff
+	padding: 16px 
+	position: relative
+	h3
+		font-size: 28px
+		padding: 32px
+		margin: 0
+	p
+		font-size: 16px
+		margin: 0 32px 32px 32px
+
+
+
+@media (max-width : 768px)
+	header
+		padding: 0 16px
+		.wrapper
+			justify-content: normal
+		.busca
+			min-width: 225px
+		.logo
+			margin: 0 10px 0 0
+	.breadcumb
+		padding: 16px
+	.detail
+		flex-direction: column
+		.img-product
+			img
+				width: 100%
+		.price
+			position: inherit
+			right: inherit
+			max-width: 100%
+	.description
+		h3
+			padding: 0px 0 32px 0
+
+		p 
+			margin: 0
+
+	.list
+		flex-direction: column
+		.img-product
+			left: 50%
+			position: relative
+			transform: translateX(-50%)
+			img
+				transform: none
+		.location 
+			position: inherit
+			right: inherit
+			top: inherit
